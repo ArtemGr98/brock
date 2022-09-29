@@ -79,7 +79,7 @@
 .nav {
     display: flex;
 
-    div {
+    a {
         font-style: normal;
         font-weight: 400;
         font-size: 15px;
@@ -98,11 +98,19 @@
 .address {
     display: flex;
     align-items: center;
+
     a {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        color: #374140;
+        
         margin-right: 20px;
         white-space: nowrap;
         display: flex;
         align-items: center;
+
         &:first-child {
             img {
                 margin-top: 15px;

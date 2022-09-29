@@ -17,7 +17,7 @@ body {
 ::before {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
-  font-family: 'Gilroy Bold', sans-serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.5; }
 
 ::-webkit-scrollbar-button {
@@ -1617,7 +1617,7 @@ button.swiper-pagination-bullet {
 
 .nav {
   display: flex; }
-  .nav div {
+  .nav a {
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -1626,13 +1626,18 @@ button.swiper-pagination-bullet {
     color: #374140;
     cursor: pointer;
     margin-right: 20px; }
-    .nav div:hover {
+    .nav a:hover {
       color: #378858; }
 
 .address {
   display: flex;
   align-items: center; }
   .address a {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #374140;
     margin-right: 20px;
     white-space: nowrap;
     display: flex;
