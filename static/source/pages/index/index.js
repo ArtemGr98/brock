@@ -20029,9 +20029,12 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.scss */ "../components/common_componentc/header/index.scss");
 /* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_0__);
- // let hamburger = document.querySelector('#hamburger')
-// let header = document.querySelector('.header')
-// hamburger.addEventListener('click', () => header.classList.toggle('active'))
+
+var hamburger = document.querySelector('#hamburger');
+var header = document.querySelector('.header');
+hamburger.addEventListener('click', function () {
+  return header.classList.toggle('active');
+});
 
 /***/ }),
 

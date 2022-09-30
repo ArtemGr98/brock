@@ -1,4 +1,10 @@
 .header {
+    @media (max-width: 1000px) {
+        padding: 0px;
+        height: 60px;
+        position: fixed;
+    }
+
     // position: absolute;
     display: flex;
     align-items: center;
@@ -7,14 +13,23 @@
     width: 100%;
     background-color: white;
 
-    padding-top: 10px;
+    padding: 0 5%;
+
+    &__logo {
+        @media (max-width: 1000px) {
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+        }
+        padding: 15px;
+        height: 100%;
+        display: flex;
+    }
 
     &_hamburger {
         overflow: hidden;
         position: relative;
-        width: 55px;
-        height: 55px;
-        background: #030E1E;
+        width: 65px;
+        height: 60px;
+        background: #378858;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -24,8 +39,8 @@
     &_line {
         transition: all .2s;
         position: absolute;
-        width: 31px;
-        height: 3px;
+        width: 30px;
+        height: 5px;
         border-radius: 18px;
         margin: 4px 0;
         cursor: pointer;
@@ -37,6 +52,7 @@
         }
 
         &_2 {
+            width: 23px;
             top: 24px;
             left: 20px;
         }
@@ -66,20 +82,44 @@
             }
         }
 
-        .header_mob_nav {
-            // display: block;
+        .nav {
             opacity: 1;
             left: 0;
-            top: 55px;
-            z-index: 3;
+            z-index: 1000;
         }
     }
 }
 
 .nav {
-    display: flex;
+    @media (max-width: 1000px) {
+        opacity: 0;
+        position: fixed;
+        left: -300px;
+        top: 60px;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+        background: #FFFFFF;
+        height: 100vh;
+        width: 60vw;
+        transition: all .2s;
+        padding: 50px;
+    } 
+    @media (max-width: 600px) {
+        width: 100vw;
+        padding: 20px;
+    }
 
-    a {
+    display: flex;
+    .nav__item {
+        @media (max-width: 1000px) {
+            margin-right: 0px;
+            margin-bottom: 50px;
+            font-size: 30px;
+        }
+        @media (max-width: 600px) {
+            font-size: 20px;
+        }
         font-style: normal;
         font-weight: 400;
         font-size: 15px;
@@ -100,12 +140,19 @@
     align-items: center;
 
     a {
+        @media (max-width: 500px) {
+            margin-right: 10px;
+            img {
+                width: 30px;
+                height: 30px;
+            }
+        }
         font-style: normal;
         font-weight: 700;
         font-size: 18px;
         line-height: 21px;
         color: #374140;
-        
+
         margin-right: 20px;
         white-space: nowrap;
         display: flex;
@@ -113,8 +160,17 @@
 
         &:first-child {
             img {
+                @media (max-width: 500px) {
+                    margin-top: 10px;
+                }
                 margin-top: 15px;
             }
+        }
+    }
+
+    &__phone {
+        @media (max-width: 1000px) {
+            display: none;
         }
     }
 }

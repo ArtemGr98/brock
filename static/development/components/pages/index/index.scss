@@ -1,9 +1,15 @@
 main {
+    @media (max-width: 1000px) {
+        margin: 0;
+    }
     background: linear-gradient(5.79deg, #010101 85.28%, #363A45 101.11%, #000000 101.11%);
     margin: 0 5%;
 }
 
 section {
+    @media (max-width: 1000px) {
+        margin: 0;
+    }
     margin: 0 100px;
     padding-top: 0;
     padding: 40px;
@@ -29,6 +35,9 @@ section {
     }
 
     &__left {
+        @media (max-width: 1000px) {
+            padding: 5%;
+        }
         padding: 100px;
     }
 
