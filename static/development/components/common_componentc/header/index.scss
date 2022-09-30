@@ -25,12 +25,15 @@
     }
 
     &_hamburger {
+        @media (max-width: 1000px) {
+            display: flex;
+        }
         overflow: hidden;
         position: relative;
         width: 65px;
         height: 60px;
         background: #378858;
-        display: flex;
+        display: none;
         flex-direction: column;
         justify-content: center;
         align-items: center;

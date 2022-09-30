@@ -68,3 +68,19 @@
         }
     }
 }
+
+@media (max-width: 1000px) {
+    .calculator__middle {
+        flex-direction: column;
+    }
+    .calculator__left, 
+    .calculator__right {
+        width: 100%;
+    }
+    .calculator__bottom, .calculator__btn {
+        flex-direction: column-reverse;
+        button, div {
+            width: 100%;
+        }
+    }
+}

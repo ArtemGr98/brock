@@ -574,6 +574,9 @@ main {
     font-size: 50px;
     line-height: 59px;
     color: #2C2C2C; }
+    @media (max-width: 1000px) {
+      .title_2 {
+        display: none; } }
 
 .text_std {
   font-style: normal;
@@ -1589,10 +1592,13 @@ button.swiper-pagination-bullet {
     width: 65px;
     height: 60px;
     background: #378858;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+    @media (max-width: 1000px) {
+      .header_hamburger {
+        display: flex; } }
   .header_line {
     transition: all .2s;
     position: absolute;
@@ -1720,6 +1726,10 @@ section {
   backdrop-filter: blur(2px); }
   .section_bg:not(:last-child) {
     margin-bottom: 20px; }
+
+@media (max-width: 1000px) {
+  .banner {
+    padding-top: 60px; } }
 
 .banner__slide {
   background-repeat: no-repeat;
@@ -1972,6 +1982,17 @@ section {
   display: flex; }
   .calculator_course div:not(:last-child) {
     margin-right: 20px; }
+
+@media (max-width: 1000px) {
+  .calculator__middle {
+    flex-direction: column; }
+  .calculator__left,
+  .calculator__right {
+    width: 100%; }
+  .calculator__bottom, .calculator__btn {
+    flex-direction: column-reverse; }
+    .calculator__bottom button, .calculator__bottom div, .calculator__btn button, .calculator__btn div {
+      width: 100%; } }
 
 
 /*# sourceMappingURL=index.css.map*/
